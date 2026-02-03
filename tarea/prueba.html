@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Etiquetas HTML</title>
+    <link rel="stylesheet" href="assets/css/css.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Ejemplo General de HTML</h1>
+        <h1>Cristel Daniela Rodriguez Torres</h1>
+
+        <hgroup>
+            <h2>Subtítulo Principal</h2>
+            <h3>Subtítulo Secundario</h3>
+        </hgroup>
+    </header>
+
+    <main id="main">
+
+        <!-- Texto y formato -->
+        <section id="texto">
+            <p>
+                Este es un <strong>párrafo</strong> con texto en <b>negrita</b>,
+                <i>cursiva</i> y <em>énfasis</em>.
+            </p>
+
+            <p>Texto <mark>resaltado</mark> y texto <small>pequeño</small>.</p>
+
+            <p>Ejemplo de fórmula: H<sub>2</sub>O y potencia 2<sup>3</sup>.</p>
+
+            <p>Texto <del>eliminado</del> y texto <ins>insertado</ins>.</p>
+
+            <p>Presione <kbd>Ctrl + S</kbd> para guardar.</p>
+
+            <p>Código ejemplo: <code>console.log("Hola");</code></p>
+
+            <p>
+                La <abbr title="HyperText Markup Language">HTML</abbr>
+                es un lenguaje web.
+            </p>
+
+            <p><dfn>Frontend</dfn> es la parte visible de una web.</p>
+
+            <p>
+                Fecha actual:
+                <time datetime="2026-02-02">2 de febrero 2026</time>
+            </p>
+
+            <p>Precio: <data value="15000">15,000 colones</data></p>
+
+            <p>
+                Texto con <span style="color:red;">estilo específico</span>.
+            </p>
+
+            Línea 1<br>
+            Línea 2
+
+            <pre>
+                Texto con formato preservado
+            </pre>
+
+            <blockquote>
+                "La tecnología mueve el mundo."
+            </blockquote>
+
+            <p>Como dijo <q>Steve Jobs</q> en <cite>Apple</cite>.</p>
+        </section>
+
+        <!-- Listas -->
+        <section id="listas">
+            <h2>Listas</h2>
+
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+            </ul>
+
+            <ol>
+                <li>Paso 1</li>
+                <li>Paso 2</li>
+            </ol>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje para crear páginas web.</dd>
+            </dl>
+        </section>
+
+        <!-- Imágenes -->
+        <section id="imagenes">
+            <figure>
+                <img src="https://img.freepik.com/vector-premium/long-haired-brunette-woman-semi-flat-vector-character-head-african-lady-with-curly-hair-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-for-web-graphic-design-animation_151150-15977.jpg"
+                    alt="Imagen ejemplo">
+                <figcaption>CRISTEL DANIELA RODRIGUEZ TORRES.</figcaption>
+            </figure>
+
+            <picture>
+                <source media="(max-width:600px)"
+                    srcset="https://img.freepik.com/vector-premium/long-haired-brunette-woman-semi-flat-vector-character-head-african-lady-with-curly-hair-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-for-web-graphic-design-animation_151150-15977.jpg"
+                    alt="Imagen ejemplo">
+                <img src="https://img.freepik.com/vector-premium/long-haired-brunette-woman-semi-flat-vector-character-head-african-lady-with-curly-hair-editable-cartoon-avatar-icon-face-emotion-colorful-spot-illustration-for-web-graphic-design-animation_151150-15977.jpg"
+                    alt="Imagen ejemplo" alt="Imagen adaptable">
+            </picture>
+        </section>
+
+        <!-- Información adicional -->
+        <section id="info-extra">
+            <details>
+                <summary>Más información</summary>
+                <p>Contenido adicional oculto.</p>
+            </details>
+
+            <dialog open>
+                Ejemplo de ventana de diálogo.
+            </dialog>
+        </section>
+
+        <!-- Enlaces -->
+        <section id="enlaces">
+            <h2>Enlaces</h2>
+            <a href="https://www.w3schools.com/">Ir a W3School</a>
+        </section>
+
+        <!-- Mapa de imagen -->
+        <section id="mapa">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.4SWVaYYCqmCNktbBe16_aAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                usemap="#mapa">
+
+            <map name="mapa">
+                <area shape="rect" coords="0,0,150,150"
+                    href="https://discord.com/login?redirect_to=%2Fchannels%2F%40me">
+            </map>
+        </section>
+
+        <!-- Gráficos -->
+        <section id="graficos">
+            <canvas width="200" height="100"></canvas>
+
+            <svg width="120" height="100">
+                <circle cx="60" cy="50" r="40" stroke="black" fill="blue" />
+            </svg>
+        </section>
+
+        <!-- Multimedia -->
+        <section id="multimedia">
+            <audio controls>
+                <source src="assets/mp3/just-relax-11157.mp3" type="audio/mpeg">
+            </audio>
+
+            <video width="320" controls>
+                <source src="assets/video/181376-866506956_tiny.mp4" type="video/mp4">
+                <track kind="subtitles" src="subtitulos.vtt">
+            </video>
+        </section>
+
+        <!-- Contenido externo -->
+        <section id="externo">
+            <iframe src="https://www.youtube.com/embed/-iKO5jUXgPY" width="300" height="150">
+            </iframe>
+        </section>
+<!-- POSITION -->
+<section id="position">
+    <h2>Ejemplo Position</h2>
+
+    <div class="caja static">Static</div>
+    <div class="caja relative">Relative</div>
+
+    <div class="contenedor">
+        Contenedor
+        <div class="caja absolute">Absolute</div>
+    </div>
+
+    <div class="caja fixed">Fixed</div>
+</section>
+
+<!-- FLOAT -->
+<section id="float">
+    <h2>Float y Clear</h2>
+
+    <div class="flotante">Caja 1</div>
+    <div class="flotante">Caja 2</div>
+    <div class="flotante">Caja 3</div>
+
+    <div class="clear"></div>
+</section>
+
+<!-- DISPLAY -->
+<section id="display">
+    <h2>Display</h2>
+
+    <span class="bloque">inline → block</span>
+    <div class="inline">block → inline</div>
+    <div class="inline-block">inline-block</div>
+</section>
+
+<!-- OVERFLOW -->
+<section id="overflow">
+    <h2>Overflow</h2>
+    <div class="overflow-box">
+        Texto muy largo que se sale del contenedor.
+        Texto muy largo que se sale del contenedor.
+        Texto muy largo que se sale del contenedor.
+    </div>
+</section>
+
+<!-- VISIBILITY -->
+<section id="visibility">
+    <h2>Visibility</h2>
+    <div>Elemento visible</div>
+    <div class="oculto">Elemento oculto</div>
+</section>
+
+<!-- Z-INDEX -->
+<section id="zindex">
+    <h2>Z-Index</h2>
+    <div class="z1">Caja Roja</div>
+    <div class="z2">Caja Azul</div>
+</section>
+    </main>
+
+    <footer id="footer">
+        <address>
+            Contacto: cdriguezt@email.com<br>
+            Costa Rica
+        </address>
+    </footer>
+
+</body>
+
+</html>
